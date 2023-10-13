@@ -40,6 +40,38 @@ def read_json_file(file_path):
     with open(file_path, 'r') as f:
         return json.load(f)
 
+def read_and_load_rune(rune_file_path, render_folder, mesh_folder, texture_folder):
+    # Read the RUNE JSON file
+    rune_data = read_json_file(rune_file_path)
+    
+    # Initialize an empty list to store mesh and texture data for each body part
+    rune_parts = []
+    
+    # Loop through each body part in the RUNE JSON
+    for part in rune_data.get('rune_body_parts', []):
+        render_id = part['body_part_render']
+        position = part['body_part_position']
+        
+        # Read the corresponding RENDER and MESH JSON files
+        render_data = read_json_file(os.path.join(render_folder, f"{render_id}.json"))
+        mesh_data = read_json_file(os.path.join(mesh_folder, f"{render_data['render_template']['template_mesh']['mesh_set'][0]['polymesh_id']}.json"))
+        
+        # Extract texture data from RENDER JSON
+        texture_id = render_data['render_texture_set'][0]['texture_data']['texture_id']
+        texture_data = Image.open(os.path.join(texture_folder, f"{texture_id}.jpg"))
+        
+        # Store the data in a dictionary
+        part_data = {
+            'position': position,
+            'render_data': render_data,
+            'mesh_data': mesh_data,
+            'texture_data': texture_data
+        }
+        rune_parts.append(part_data)
+    
+    return rune_parts
+
+
 # Function to extract the ID from a filename
 def extract_id_from_filename(filename):
     return filename.split('-')[0].split('.')[0]
@@ -80,6 +112,26 @@ def render_mesh_from_file(mesh_file_path, texture_name):
     except:
         pass
 
+def render_rune(rune_parts):
+    for part in rune_parts:
+        # Extract data for each body part
+        position = part['position']
+        render_data = part['render_data']
+        mesh_data = part['mesh_data']
+        texture_data = part['texture_data']
+        
+        # Activate texture
+        glBindTexture(GL_TEXTURE_2D, texture_data)
+        
+        # Translate the mesh based on its position
+        glPushMatrix()
+        glTranslatef(position[0], position[1], position[2])
+        
+        # TODO: Add code to render the mesh based on mesh_data and render_data
+        
+        # Revert the translation
+        glPopMatrix()
+
 
 # Load all RENDER JSON files
 render_dir = Path('./ARCANE_DATA/RENDER')  # Replace with the actual path
@@ -87,6 +139,7 @@ render_files = list(render_dir.glob('*.json'))
 
 # Read RENDER files and store them in a dictionary keyed by their IDs
 render_objects = {}
+
 for render_file in render_files:
     render_id = extract_id_from_filename(render_file.name)
     render_objects[render_id] = read_json_file(render_file)
@@ -128,7 +181,14 @@ class OpenGLWidget(QOpenGLWidget):
         glRotatef(self.zRot / 16.0, 0, 0, 1)
 
         if self.current_render_id:
-            texture_file_path = f"./ARCANE_DATA/TEXTURE/{self.current_render_id}.jpg"
+            # Read the correct texture ID from the RENDER JSON file associated with the selected rune or render object
+            # Ensure the .json extension is only added once
+            render_file_path = os.path.join('ARCANE_DATA', 'RENDER', f"{selected_render_id if selected_render_id.endswith('.json') else f'{selected_render_id}.json'}")
+            with open(render_file_path, 'r') as file:
+                content = json.load(file)
+            correct_texture_id = content.get('texture_id', 'Unknown')
+            # Use the correct texture ID to form the path for the texture file
+            texture_file_path = f"./ARCANE_DATA/TEXTURE/{correct_texture_id}.jpg"
             self.texture_id = load_texture(texture_file_path, str(self.current_render_id))
             
             render_object = self.render_objects.get(self.current_render_id, {})
@@ -169,7 +229,15 @@ label = QLabel('Select RENDER Object ID:')
 layout.addWidget(label)
 
 dropdown = QComboBox()
+selected_render_id = ''  # Initialize the selected render ID
+# Update 'selected_render_id' based on the dropdown selection
+def on_dropdown_change():
+    global selected_render_id
+    selected_rune_name = dropdown.currentText()
+    selected_render_id = rune_names.get(selected_rune_name, '')
 
+# Connect the dropdown change event to the updating function
+dropdown.currentIndexChanged.connect(on_dropdown_change)
 # Read rune names from the JSON files in the COBJECTS/RUNE directory
 rune_names = {}
 rune_dir = os.path.join('ARCANE_DATA', 'COBJECTS', 'RUNE')
@@ -184,7 +252,6 @@ for file_name in os.listdir(rune_dir):
 dropdown.clear()
 for rune_name in rune_names.keys():
     dropdown.addItem(rune_name)
-
 dropdown.addItems(list(render_objects.keys()))
 layout.addWidget(dropdown)
 
