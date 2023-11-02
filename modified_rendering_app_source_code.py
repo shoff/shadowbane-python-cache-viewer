@@ -71,10 +71,9 @@ def read_and_load_rune(rune_file_path, render_folder, mesh_folder, texture_folde
     
     return rune_parts
 
-
 # Function to extract the ID from a filename
 def extract_id_from_filename(filename):
-    return filename.split('-')[0].split('.')[0]
+    return filename.split('.')[0]
 
 def render_mesh_from_file(mesh_file_path, texture_name):
     try:
@@ -132,7 +131,6 @@ def render_rune(rune_parts):
         # Revert the translation
         glPopMatrix()
 
-
 # Load all RENDER JSON files
 render_dir = Path('./ARCANE_DATA/RENDER')  # Replace with the actual path
 render_files = list(render_dir.glob('*.json'))
@@ -184,9 +182,11 @@ class OpenGLWidget(QOpenGLWidget):
             # Read the correct texture ID from the RENDER JSON file associated with the selected rune or render object
             # Ensure the .json extension is only added once
             render_file_path = os.path.join('ARCANE_DATA', 'RENDER', f"{selected_render_id if selected_render_id.endswith('.json') else f'{selected_render_id}.json'}")
+            print(f"loading render file {render_file_path}")
             with open(render_file_path, 'r') as file:
                 content = json.load(file)
             correct_texture_id = content.get('texture_id', 'Unknown')
+            print(f"loading texture {correct_texture_id}.jpg")
             # Use the correct texture ID to form the path for the texture file
             texture_file_path = f"./ARCANE_DATA/TEXTURE/{correct_texture_id}.jpg"
             self.texture_id = load_texture(texture_file_path, str(self.current_render_id))

@@ -1,0 +1,909 @@
+{
+    "obj_name": "Shaarduk Runemaster",
+    "body_part_renders": [
+        700239,
+        700241,
+        700242,
+        700243,
+        700244,
+        700245,
+        700246,
+        700247,
+        700248,
+        700249,
+        700250,
+        700251,
+        700252,
+        700253,
+        700254,
+        700255
+    ],
+    "render_data": {
+        "700239": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.43232500553131104,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700240,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "LOWERBACK",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700241": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.3009969890117645,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700241,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RHIPJOINT",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": false,
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700242": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 1.1332709789276123,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700242,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RFEMUR",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700243": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 1.1999750137329102,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700243,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RTIBIA",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700244": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.0,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700244,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RFOOT",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700245": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.6666309833526611,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700245,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "MIDBACK",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700246": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.8999649882316589,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700246,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "UPPERBACK",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700247": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.9999690055847168,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700247,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RSHOULDERJOINT",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": false,
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700248": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 1.1332709789276123,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700248,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RHUMERUS",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700249": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.9999690055847168,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700249,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RRADIUS",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700250": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.4666459858417511,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700250,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RWRIST",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700251": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.0,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700251,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "RHAND",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700252": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.6666309833526611,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700252,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "NECK",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700253": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.9999690055847168,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700253,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "HEAD",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700254": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.6666309833526611,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700254,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "JAWJOINT",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": false,
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        },
+        "700255": {
+            "render_template": {
+                "template_object_can_fade": true,
+                "template_tracker": "NONE",
+                "template_illuminated": false,
+                "template_bone_length": 0.0,
+                "template_clip_map": 1,
+                "template_light_two_side": 0,
+                "template_cull_face": 1,
+                "template_specular_map": 0,
+                "template_shininess": 0.0,
+                "template_has_mesh": true,
+                "template_mesh": {
+                    "mesh_set": [
+                        {
+                            "polymesh_id": 700255,
+                            "polymesh_decal": false,
+                            "polymesh_double_sided": false
+                        }
+                    ]
+                }
+            },
+            "render_target_bone": "JAW",
+            "render_scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "render_has_loc": 1,
+            "render_loc": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "render_children": [],
+            "render_has_texture_set": true,
+            "render_texture_set": [
+                {
+                    "texture_type": "COLOR_TEXTURE",
+                    "texture_data": {
+                        "texture_id": 700193,
+                        "texture_transparent": "NONE",
+                        "texture_compress": true,
+                        "texture_normal_map": false,
+                        "texture_detail_normal_map": false,
+                        "texture_create_mip_maps": true,
+                        "texture_wrap": true
+                    }
+                }
+            ],
+            "render_collides": true,
+            "render_calculate_bounding_box": true,
+            "render_nation_crest": false,
+            "render_guild_crest": false,
+            "render_bumped": false,
+            "render_vp_active": false,
+            "render_has_light_effects": false
+        }
+    }
+}

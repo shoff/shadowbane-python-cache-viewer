@@ -16,5 +16,5 @@ def remove_dash_xxx_recursively(directory):
 
 # Example usage:
 # Specify the directory where the renaming should start
-start_directory = r'C:\dev\shadowbane-python-cache-viewer\ARCANE_DATA'
+start_directory = r'F:\ai\shadowbane\ARCANE_DATA'
 remove_dash_xxx_recursively(start_directory)
